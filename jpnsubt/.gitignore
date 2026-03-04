@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Work directory (intermediate files)
+jpnsubt_work/
+
+# Audio files (intermediate preprocessed WAV)
+*.wav
+
+# OS
+.DS_Store

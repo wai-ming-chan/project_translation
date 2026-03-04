@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Project-specific working directories
+cantran_work/
+jpnsubt_work/
+
+# Sensitive project content (do not upload to public repo)
+dictionaries/          # Translation glossaries - proprietary
+subtitles/            # Generated/translated subtitle files
+media/                # Video files
+references/           # Reference materials
+archive/              # Archived files
+
+# Media cache/temp files
+*.tmp
+*.cache
+
+# macOS
+.AppleDouble
+.LSOverride
+*.localized
+
+# Lock files (optional - uncomment if using uv/pip)
+# uv.lock
+# requirements.lock

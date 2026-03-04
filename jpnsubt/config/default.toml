@@ -1,0 +1,16 @@
+[preprocess]
+target_sample_rate = 16000
+target_channels = 1
+
+[transcribe]
+model = "kotoba-tech/kotoba-whisper-v2.0"
+language = "ja"
+# Note: PyTorch version, not MLX. More accurate than MLX variant.
+
+[models]
+cache_dir = "/Volumes/Macbook_Air_M1_backup/models_trans"
+
+[output]
+format = "srt"       # srt or vtt
+work_dir = "jpnsubt_work"
+keep_intermediates = false

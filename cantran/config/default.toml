@@ -1,0 +1,35 @@
+[capture]
+sample_rate = 44100
+channels = 2
+device_name = "BlackHole 2ch"
+
+[preprocess]
+target_sample_rate = 16000
+target_channels = 1
+
+[transcribe]
+model = "mlx-community/whisper-large-v3-turbo"
+language = "auto"    # auto-detect, or: ja, zh, en
+best_of = 1  # greedy decoding (mlx-whisper does not support beam search)
+
+[translate]
+nllb_model = "facebook/nllb-200-distilled-600M"   # for non-EN → EN step
+qwen_model = "/Volumes/Macbook_Air_M1_backup/models_trans/qwen3-8b-4bit"  # for EN → Cantonese step
+source_lang = "auto"  # auto from transcription, or: jpn_Jpan, zho_Hans, eng_Latn
+target_lang = "yue_Hant"
+opencc_config = "s2hk"
+
+[tts]
+model = "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-4bit"
+voice = "Cantonese_woman"
+max_speed_factor = 1.8
+
+[models]
+cache_dir = "/Volumes/Macbook_Air_M1_backup/models_trans"
+
+[output]
+work_dir = "cantran_work"
+keep_intermediates = false
+
+[playback]
+command = "afplay"

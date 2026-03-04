@@ -1,0 +1,34 @@
+Japanese_Term,Japanese_Romaji,Cantonese_Translation,Context,Priority
+機動戦士,Kidou Senshi,機動戰士,Military unit / mobile suit pilot,High
+ガンダム,Gundamu,高達,Series name / mobile suit name,High
+ニュータイプ,Nyuu Taipu,新人類,Psychic ability in Gundam universe,High
+強化人間,Kyouka Ningen,強化人類 / 改造人類,Cyber-enhanced humans,High
+モビルスーツ,Mobiru Suutsu,機動戰士 / 機甲戰鬥機,Mobile suit,High
+モビルアーマー,Mobiru Armaa,機動裝甲,Mobile armor,High
+地球連邦政府,Chikyuu Renppou Seifu,地球聯邦政府,Earth Federation Government,High
+スペースコロニー,Supesu Koroni,宇宙殖民地 / 太空殖民地,Space colony,High
+アステロイド,Asuteroido,小行星,Asteroid,High
+サイコフレーム,Saiko Fureme,精神感應框架 / 心靈框架,Newtype-sensitive tech,High
+ナレーション,Nareshyon,旁白,Narration,Medium
+エンディング,Endingu,片尾曲,Ending theme song,Medium
+オープニング,Opuningu,片頭曲,Opening theme song,Medium
+戦闘シーン,Sentou Shin,戰鬥場景,Battle scene,Medium
+革命,Kakumei,革命 / 反叛,Revolution,Medium
+反乱軍,Hanran-gun,反亂軍,Rebel military,Medium
+同盟,Doumei,同盟,Alliance,Medium
+交渉,Kousetsu,談判 / 談判,Negotiation,Medium
+停戦,Teisen,停戰協議,Ceasefire,Medium
+軍事作戦,Gunji Sakusen,軍事行動 / 作戰,Military operation,Medium
+指令,Shirei,指令 / 命令,Command / order,Medium
+駐屯地,Chutonton Chi,基地,Military base,Medium
+攻撃,Kougeki,攻擊,Attack,Medium
+防衛,Bouei,防衛,Defense,Medium
+勝利,Shouri,勝利,Victory,Medium
+敗北,Haiboku,失敗 / 敗北,Defeat,Medium
+宇宙世紀0093年,Uchuu Seiki 0093nen,宇宙世紀0093年,UC 0093,High
+新ジオン,Shin Jion,新吉翁,Neo Zeon,High
+グリプス戦役,Guripusu Seneki,格利普斯戰役,Gryps Conflict (previous war),Medium
+ダイクン,Daikun,戴昆,Zeon founder (surname),High
+涙,Namida,淚水 / 眼淚,Tears,Low
+終局,Shuukyoku,終局 / 結局,Final / End,Low
+光,Hikari,光芒 / 光線,Light / brilliance,Low

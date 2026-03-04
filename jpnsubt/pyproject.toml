@@ -1,0 +1,26 @@
+[project]
+name = "jpnsubt"
+version = "0.1.0"
+description = "Japanese subtitle generator using Kotoba Whisper V2.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "click>=8.0",
+    "openai-whisper>=20250625",
+    "huggingface-hub>=0.20",
+    "numpy>=1.26",
+    "rich>=13.0",
+]
+
+[project.scripts]
+jpnsubt = "jpnsubt.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jpnsubt"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
