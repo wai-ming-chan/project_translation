@@ -34,7 +34,7 @@ uv run cantran process input.mp4 --source-lang ja     # Process existing file
 - Optional: dubbed Cantonese audio/video
 
 **Best for:**
-- Converting Japanese anime/drama to Cantonese subtitles + audio
+- Converting Japanese video content to Cantonese subtitles + audio
 - When you need both translation AND text subtitles
 
 ---
@@ -102,16 +102,15 @@ project_translation/
 │   ├── .venv/                  # Virtual environment
 │   └── jpnsubt_work/           # Working files (gitignored)
 │
-├── media/                      # Video files
-│   └── G_GUNDAM/               # Organized by series
+├── media/                      # Video files (NOT tracked in git)
+│   └── [project_name]/         # Organized by series/project
 │
-├── subtitles/                  # Generated/existing subtitle files
-│   ├── G_GUNDAM/
-│   ├── Chiikawa/
+├── subtitles/                  # Generated/existing subtitle files (NOT tracked in git)
+│   ├── [project_name]/
 │   └── ...
 │
-├── dictionaries/               # Translation glossaries (CSV)
-│   ├── G_GUNDAM/
+├── dictionaries/               # Translation glossaries (NOT tracked in git)
+│   ├── [project_name]/
 │   │   ├── force_translate.csv
 │   │   └── dont_translate.csv
 │   └── ...
@@ -179,17 +178,17 @@ Both tools use TOML config files in `config/default.toml`:
 
 Override config via CLI:
 ```bash
-uv run jpnsubt input.mp4 --model kaiinui/kotoba-whisper-v2.0-mlx --format vtt
+uv run jpnsubt input.mp4 --model kotoba-tech/kotoba-whisper-v2.0 --format vtt
 ```
 
 ---
 
 ## 📚 Key Notes
 
-- **Models**: Downloaded from HuggingFace Hub (cached in `/Volumes/Macbook_Air_M1_backup/models_trans/`)
+- **Models**: Downloaded from HuggingFace Hub (configurable in `config/default.toml`)
 - **FFmpeg**: Required for audio preprocessing (both tools)
 - **Working files**: Intermediate files stored in `*_work/` dirs (auto-cleanup or use `--keep` flag)
-- **Fast on Apple Silicon**: Both tools use MLX (optimized for M1/M2/M3 Macs)
+- **Python 3.11**: Required with `uv` package manager for dependency management
 
 ---
 

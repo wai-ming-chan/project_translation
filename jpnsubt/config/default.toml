@@ -8,7 +8,7 @@ language = "ja"
 # Note: PyTorch version, not MLX. More accurate than MLX variant.
 
 [models]
-cache_dir = "/Volumes/Macbook_Air_M1_backup/models_trans"
+cache_dir = "/path/to/models_cache"  # Update this to your local models directory
 
 [output]
 format = "srt"       # srt or vtt

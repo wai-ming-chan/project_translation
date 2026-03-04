@@ -14,7 +14,7 @@ best_of = 1  # greedy decoding (mlx-whisper does not support beam search)
 
 [translate]
 nllb_model = "facebook/nllb-200-distilled-600M"   # for non-EN → EN step
-qwen_model = "/Volumes/Macbook_Air_M1_backup/models_trans/qwen3-8b-4bit"  # for EN → Cantonese step
+qwen_model = "Qwen/Qwen3-8B-4bit"  # HuggingFace model ID or local path
 source_lang = "auto"  # auto from transcription, or: jpn_Jpan, zho_Hans, eng_Latn
 target_lang = "yue_Hant"
 opencc_config = "s2hk"
@@ -25,7 +25,7 @@ voice = "Cantonese_woman"
 max_speed_factor = 1.8
 
 [models]
-cache_dir = "/Volumes/Macbook_Air_M1_backup/models_trans"
+cache_dir = "/path/to/models_cache"  # Update this to your local models directory
 
 [output]
 work_dir = "cantran_work"
